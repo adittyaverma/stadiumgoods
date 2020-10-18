@@ -1,24 +1,31 @@
-# README
+# Stadiumgoods Assignment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to the Stadiumgoods assignment. This repository includes a very basic rails app to be used to assessment and testing purposes only.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+Dependencies:
 
-* System dependencies
+- Ruby 2.7.0
+- Rails 6.0.3 (Framework)
 
-* Configuration
+Additional Gems:
 
-* Database creation
+- gem `rest-client`
+- gem `concurrent-ruby`
 
-* Database initialization
+Install bundle to install dependancies and gems.
 
-* How to run the test suite
+- bundle install
 
-* Services (job queues, cache servers, search engines, etc.)
+Run this application
 
-* Deployment instructions
+- rails server
 
-* ...
+
+## Challenge
+
+### ☐ Return JSON response for different social platforms
+We are returning JSON response for given social pages. 
+- We are using `Rails.cache.write` and `Rails.cache.read` to write/read response because we might not receive any response in specific cases.
+- We are using `concurrent-ruby` gem to call all three social pages parallelly.
