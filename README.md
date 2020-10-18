@@ -22,6 +22,9 @@ Run this application
 
 - rails server
 
+End Point:
+curl localhost:3000
+
 
 ## Challenge
 
